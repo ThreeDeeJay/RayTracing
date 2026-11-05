@@ -50,9 +50,10 @@ jobs:
         --recurse-submodules
 
     - name: Download assets
+      shell: cmd
       run: |
         pushd assets
-        download_bistro.bat
+        call download_bistro.bat
         pushd ..
 
     - name: Configure
