@@ -52,7 +52,7 @@ jobs:
     - name: Download assets
       run: |
         pushd assets
-        call download_bistro.bat
+        download_bistro.bat
         pushd ..
 
     - name: Configure
